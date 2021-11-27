@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+    font-size: 28px;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #202020;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 14px;
+}
+
+header .menu > *{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header .menu > a:hover {
+    border-bottom: 2px solid white;
+}
+
+.introduction { background: url("../images/introduction.jpg"); }
+.luffy { background: url("../images/luffy-bg.jpg"); }
+.zoro { background: url("../images/zoro-bg.jpg"); }
+.nami { background: url("../images/nami-bg.jpg"); }
+.usopp { background: url("../images/usopp-bg.jpg"); }
+.sanji { background: url("../images/sanji-bg.jpg"); }
+.chopper { background: url("../images/chopper-bg.jpg"); }
+.robin { background: url("../images/robin-bg.jpg"); }
+.franky { background: url("../images/franky-bg.jpg"); }
+.brook { background: url("../images/brook-bg.jpg"); }
+.jinbei { background: url("../images/jinbei-bg.png"); }
+
+.panel {
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.panel article {
+    min-height: 100vh;
+    -webkit-backdrop-filter: contrast(20%);
+    backdrop-filter: contrast(20%) blur(2px);
+}
+
+.introduction article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction article .text{
+    text-align: center;
+    line-height: 50px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-backdrop-filter: contrast(20%);
+    backdrop-filter: contrast(20%) blur(2px);
+}
+
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side img {
+    max-height: 80vh;
+}
+.side .text{
+    max-width: 550px;
+    text-align: center;
+}
+
+
+
+
+
